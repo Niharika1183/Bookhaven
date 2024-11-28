@@ -22,7 +22,7 @@ function Login() {
                
                 window.location.reload();
                 localStorage.setItem("Users",JSON.stringify(res.data.user));
-              },3000);
+              },1000);
               
               
             }
@@ -32,7 +32,7 @@ function Login() {
             console.log(err);
             
             toast.error("Error:"+err.response.data.message);
-            setTimeout(()=>{},3000);
+            setTimeout(()=>{},2000);
            }
           });
     };

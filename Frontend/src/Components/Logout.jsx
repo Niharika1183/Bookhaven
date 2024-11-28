@@ -11,17 +11,17 @@ user: null,
 });
 localStorage.removeItem("Users");
 toast.success("Logout successfully");
-window.location.reload();
+
 setTimeout(()=>{
  
-
+    window.location.reload();
 
 },3000);
 
 
 } catch (error) {
 toast.error("Error: "+ error);
-setTimeout(()=>{},3000);
+setTimeout(()=>{},2000);
 }
 };
 return (
