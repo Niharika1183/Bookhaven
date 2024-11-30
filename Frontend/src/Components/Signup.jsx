@@ -15,7 +15,7 @@ function Signup() {
       email:data.email,
       password:data.password,
     }
-    await axios.post("https://bookhaven-backend-ytgt.onrender.com", userInfo)
+    await axios.post("https://bookhaven-bac.onrender.com", userInfo)
     .then((res)=>{
       console.log(res.data);
       if(res.data){
